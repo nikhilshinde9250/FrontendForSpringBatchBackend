@@ -1,0 +1,14 @@
+<div class="p-6">
+  <h1 class="text-2xl font-bold mb-4">Employee Details</h1>
+  <div *ngIf="employee">
+    <p><strong>ID:</strong> {{ employee.id }}</p>
+    <p><strong>First Name:</strong> {{ employee.firstName }}</p>
+    <p><strong>Last Name:</strong> {{ employee.lastName }}</p>
+    <p><strong>Email:</strong> {{ employee.email }}</p>
+    <p><strong>Gender:</strong> {{ employee.gender }}</p>
+    <p><strong>Contact:</strong> {{ employee.contact }}</p>
+    <p><strong>Country:</strong> {{ employee.country }}</p>
+    <p><strong>Date of Birth:</strong> {{ employee.dob }}</p>
+  </div>
+  <a routerLink="/employees" class="bg-blue-500 text-white px-3 py-1 rounded">Back to Employee List</a>
+</div>
